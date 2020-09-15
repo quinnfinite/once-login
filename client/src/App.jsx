@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Login from './components/Login.jsx';
+import Signup from './components/Signup.jsx';
 import Error from './components/Error.jsx';
 
 function App () {
@@ -9,6 +10,7 @@ function App () {
     <main>
       <Switch>
         <Route path='/login' component={Login}/>
+        <Route path='/signup' component={Signup}/>
         <Route component={Error}/>
       </Switch>
     </main>
